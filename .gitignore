@@ -1,0 +1,16 @@
+# Other people's work: kept locally, linked from INDEX.md, never redistributed from here
+sources/**
+!sources/papers/
+!sources/papers/MANIFEST.tsv
+repos/
+
+# Environments and caches
+.venv*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Large intermediate results (keep small npz/csv that a figure needs)
+work/**/*.mat
+work/**/*.h5
