@@ -96,7 +96,7 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 
 | File | What |
 |---|---|
-| `warpfactory_docs_overview.md`, `warpfactory_docs_installing.md`, `warpfactory_docs_a1_energy_conditions.md` | The GitBook: Cartesian-only limitation; Parallel Computing Toolbox listed as required (the code only touches it behind the optional GPU flag); the energy-conditions example Le cites |
+| `warpfactory_docs_overview.md`, `warpfactory_docs_installing.md`, `warpfactory_docs_a1_energy_conditions.md` | The GitBook: Cartesian-only limitation; Parallel Computing Toolbox listed as required. **It is required**: `takeFiniteDifference1.m` line 4 calls `isgpuarray()` unconditionally, a toolbox function, so the CPU path fails without it (first CI run, 18 Oct 2026). An earlier note here said the toolbox was only touched on the GPU path; that was wrong |
 | `mathworks_file_exchange_warpfactory.md` | R2022a or later; toolbox "recommended"; v1.0.1, 17 Apr 2024. Written by hand: the page refuses scripted fetches |
 | `github_warpfactory_readme.md`, `github_warpfactory_issue1_python_version.md` | README; the April 2024 request for a Python version, open, unanswered |
 | `github_warpax_readme.md`, `pypi_warpax.md` (empty, page is script-rendered), `zenodo_warpax_record.md` | warpax's own description, install, citation |

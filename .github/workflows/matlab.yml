@@ -29,9 +29,13 @@ jobs:
           git clone --depth 1 https://github.com/NerdsWithAttitudes/WarpFactory.git external/WarpFactory
           git -C external/WarpFactory log -1 --format='WarpFactory %h %cs'
 
-      - name: Set up MATLAB
+      # WarpFactory calls isgpuarray() unconditionally (Solver/utils/takeFiniteDifference1.m line 4),
+      # a Parallel Computing Toolbox function, so the toolbox is needed even on the CPU path.
+      # Found on the first CI run, 18 Oct 2026; the free public-repo licence covers it.
+      - name: Set up MATLAB with Parallel Computing Toolbox
         uses: matlab-actions/setup-matlab@v2
         with:
+          products: Parallel_Computing_Toolbox
           cache: true
 
       - name: Run smoke test
