@@ -119,8 +119,13 @@ step starts. Session counts are guesses.
 
 ### Step 4. The measurement: source consistency
 
-- Goal: the number. Delta T = T_trial - G/(8 pi) over the whole grid, where T_trial is the smoothed
-  isotropic fluid the construction fed in and G/(8 pi) is what the metric demands.
+- Goal: the number. Revised 18 October after the close reading (`work/notes/01-reading.md` §6):
+  the construction fixes the energy density and the radial pressure to the smoothed inputs by
+  design, so the only new matter it demands is the tangential pressure, set by the equilibrium
+  identity P_t = P_r + (r/2)[dP_r/dr + (rho + P_r) da/dr]. First compute that exactly from
+  WarpFactory's own 1D profiles (`Metric.params`), at the paper's smoothing and across a sweep of
+  smoothing widths. Then confirm in 3D: Delta T = T_trial - G/(8 pi) over the whole grid in both
+  toolkits, which measures the same anisotropy plus the solvers' numerical error.
 - Report, for the static shell and the warp shell: energy-density residual; radial against
   tangential pressure, the anisotropy; residual momentum density; residual in the cavity and
   outside; all as fractions of rho c^2 and all as functions of radius. Show convergence with grid
