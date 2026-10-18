@@ -107,3 +107,23 @@ about 2.6 with 1.9 % extra mass.
 - All of it is the static shell at one configuration, plus the warp shell's Eulerian components.
   The observer-robust energy conditions of the warp shell and the warpax-native comparison are the
   next computations.
+
+## 6. The paper's remedy, made quantitative (compactness scan, `compactness_scan.py`)
+
+The paper's answer to limited material strength is to make the shell large and less compact.
+Holding the geometry and smoothing at the authors' values and scaling the mass down:
+
+| 2GM/(R2 c^2) | M [kg] | rho0 [kg/m^3] | P_t peak / rho0 c^2 | max P_t / rho(r) | P_t peak [Pa] |
+|---|---|---|---|---|---|
+| 0.333 | 4.5e27 | 1.5e23 | 0.194 | 0.385 | 2.6e39 |
+| 0.1 | 1.3e27 | 4.5e22 | 0.043 | 0.085 | 1.7e38 |
+| 0.01 | 1.3e26 | 4.5e21 | 0.0039 | 0.0077 | 1.6e36 |
+| 0.001 | 1.3e25 | 4.5e20 | 0.0004 | 0.0008 | 1.6e34 |
+| 0.0001 | 1.3e24 | 4.5e19 | 0.00004 | 0.00008 | 1.6e32 |
+
+In the weak-field limit the required strength-to-energy ratio settles at 0.76 times the
+compactness. Reference ratios of strength to rho c^2: steel 7e-13, carbon fibre 4e-11, graphene
+6e-10, diamond 4e-10. A graphene-strength shell therefore needs compactness below about 8e-10. At
+the paper's 20 m radius that is still a mass of 1e19 kg at nuclear density; bringing the density
+down to graphene's own requires an Earth-sized, Earth-mass shell. What the warp shift can be at
+such compactness is the next question (the paper's "mass-to-velocity ratio"), not yet computed.
