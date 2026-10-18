@@ -14,3 +14,6 @@ __pycache__/
 # Large intermediate results (keep small npz/csv that a figure needs)
 work/**/*.mat
 work/**/*.h5
+
+# CI output written on the runner
+results/

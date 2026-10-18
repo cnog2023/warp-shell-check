@@ -1,0 +1,48 @@
+name: matlab
+
+# MathWorks licenses MATLAB at no cost on GitHub-hosted runners for public repositories when the
+# matlab-actions run-* actions are used (see sources/web/github_matlab_actions_setup_matlab_licensing.md).
+# This job clones WarpFactory (MIT) and runs the scripts under matlab/.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "matlab/**"
+      - ".github/workflows/matlab.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: matlab-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    name: WarpFactory smoke test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clone WarpFactory (MIT, NerdsWithAttitudes/WarpFactory @ main)
+        run: |
+          git clone --depth 1 https://github.com/NerdsWithAttitudes/WarpFactory.git external/WarpFactory
+          git -C external/WarpFactory log -1 --format='WarpFactory %h %cs'
+
+      - name: Set up MATLAB
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          cache: true
+
+      - name: Run smoke test
+        uses: matlab-actions/run-command@v2
+        with:
+          command: addpath(genpath('external/WarpFactory')); addpath('matlab'); smoke_test
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-results
+          path: results/smoke/
+          if-no-files-found: warn
