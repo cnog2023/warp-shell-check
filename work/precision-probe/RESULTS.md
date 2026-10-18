@@ -65,3 +65,21 @@ python -m venv .venv
 ```
 
 Runs in about two minutes; the finest Alcubierre grid needs under a gigabyte of memory.
+
+## MATLAB against the port, identical inputs (18 October 2026)
+
+`matlab/smoke_test.m` ran WarpFactory itself (commit 03b10cb) under MATLAB R2026b on a GitHub-hosted
+runner (workflow run 39150019122) on the Alcubierre case above at 1 m spacing, with the same error
+measure. Against the NumPy port on this laptop:
+
+| Quantity | MATLAB R2026b | NumPy port | Relative difference |
+|---|---|---|---|
+| Peak exact T^00 [J/m^3] | 1.9287662009388742e+39 | 1.9287662009388742e+39 | 0 |
+| Max error / peak | 0.16329873156634336 | 0.16329873156634336 | 0 |
+| RMS error / peak | 0.016803895148880661 | 0.016803895148880678 | 1.0e-15 |
+| Minkowski, max absolute T | 0 | 0 | identical |
+
+Two of the three numbers agree to all seventeen printed digits; the third differs in the last two,
+from the order of summation in a mean over 4,913 cells. This is the twelve-digit acceptance rule
+met with five digits to spare, and it closes the MATLAB-versus-Python precision question with a
+measurement rather than an argument.
