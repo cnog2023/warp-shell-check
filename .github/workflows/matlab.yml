@@ -50,3 +50,36 @@ jobs:
           name: smoke-results
           path: results/smoke/
           if-no-files-found: warn
+
+  shell:
+    name: Build the Fuchs shell (W1 example configuration)
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clone WarpFactory (MIT, NerdsWithAttitudes/WarpFactory @ main)
+        run: |
+          git clone --depth 1 https://github.com/NerdsWithAttitudes/WarpFactory.git external/WarpFactory
+          git -C external/WarpFactory log -1 --format='WarpFactory %h %cs'
+
+      # The shell builder also calls smooth(), a Curve Fitting Toolbox function
+      # (Metrics/WarpShell/metricGet_WarpShellComoving.m), undocumented in WarpFactory's README.
+      - name: Set up MATLAB with the toolboxes WarpFactory needs
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          products: Parallel_Computing_Toolbox Curve_Fitting_Toolbox
+          cache: true
+
+      - name: Build and export the shell
+        uses: matlab-actions/run-command@v2
+        with:
+          command: addpath(genpath('external/WarpFactory')); addpath('matlab'); build_shell
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shell-results
+          path: results/shell/
+          if-no-files-found: warn
