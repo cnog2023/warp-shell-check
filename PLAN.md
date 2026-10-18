@@ -1,6 +1,12 @@
 # Plan: source consistency of the Fuchs et al. warp shell
 
-Status: proposal, 18 October 2026, awaiting Carlos's go or no-go.
+Status: approved 18 October 2026 (Carlos: go; repository `warp-shell-check`, public; contact Le
+early). Progress at the end of 18 October: Steps 0, 1 and 2 done (`work/notes/01`, `02`); Step 3
+half done (the shell is built in CI at the authors' exact configuration and exported; the
+side-by-side figures against the paper are pending); Step 4's core done for the static shell
+(`work/shell/RESULTS.md`: 1D identity, 3D confirmation, smoothing sweep). Open: all-observer energy
+conditions of the warp shell in both toolkits (C4, C5), the warpax-native comparison, Step 6, Step 7.
+E-mails drafted in `work/notes/03`, to be sent by Carlos after reading.
 
 ## 0. The question
 
