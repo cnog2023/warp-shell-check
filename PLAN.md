@@ -227,6 +227,22 @@ step starts. Session counts are guesses.
 
 Compute: this laptop. The largest grid in Step 4 is below a million points.
 
+## 7a. Parts plan, 26 October 2026 (token-aware)
+
+Carlos's direction: see how far the computations go before contacting anyone, in parts, each
+approved separately. Compute on the GitHub runner is free; the cost is reading and writing, so each
+part is one focused session that ends with a result and stops. The e-mails of `work/notes/03` wait
+for Part 4.
+
+| Part | Content | Output | Needs |
+|---|---|---|---|
+| **1. How far the construction goes** | (A) the allowed shift against compactness: CI matrix over compactness {1/3, 1/10, 1/30, 1/100} and shift {0.01, 0.02, 0.04, 0.08, 0.16}, Eulerian lines, energy-condition proxies along them, then one full sampled energy-condition run at the authors' point to time it and confirm 0.02 passes. (B) the swarm model finished: Type and trace checks of the warp shell's exported stress-energy, and two literature fetches on Einstein-cluster stability | beta_max(C) table and figure; `06` extended; C5 closed from WarpFactory's side | one session; CI time |
+| **2. Second toolkit** | warpax matrix-inequality energy conditions on the exported slices (`pip install "warpax[interop]"` for the .mat reader) or its native FuchsMetric at matching parameters, against WarpFactory's sampled check; the shift threshold from both | C4 and C5 closed; miss fraction | one session |
+| **3. Reproduction figures** | Figs 6, 8, 9 of the paper side by side with ours from the slices; 7 and 10 if Part 1's full run exists | Step 3 closed | half a session |
+| **4. Write-up and contact** | the report from the notes; e-mails sent with the draft | Step 7 | one to two sessions, plus the comment window |
+
+Stopping after any part leaves a defensible note; the present state already is one.
+
 ## 8. What this project is not
 
 Not new physics. Not a port of WarpFactory, which warpax has made unnecessary. Not a stability
