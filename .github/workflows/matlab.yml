@@ -102,10 +102,12 @@ jobs:
           products: Parallel_Computing_Toolbox Curve_Fitting_Toolbox
           cache: true
 
+      # matlab/shadow holds a copy of generateUniformField.m that honours the CPU flag; added to the
+      # path after WarpFactory so it takes precedence (see the file's header).
       - name: Run the matrix
         uses: matlab-actions/run-command@v2
         with:
-          command: addpath(genpath('external/WarpFactory')); addpath('matlab'); shift_matrix
+          command: addpath(genpath('external/WarpFactory')); addpath('matlab'); addpath('matlab/shadow'); shift_matrix
 
       - name: Upload results
         if: always()
