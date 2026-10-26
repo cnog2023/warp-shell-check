@@ -68,6 +68,28 @@ Two further results:
   locally, and the random-axis average cancels that too. A single pair of rings, as in the novel,
   does not: it is a caricature of the swarm, not an instance of it.
 
+## 3a. Stability, from the literature (added 26 October)
+
+Two sources, read at abstract and section level, not in full:
+
+- Böhmer and Harko, "On Einstein clusters as galactic dark matter halos" (MNRAS 379, 393, 2007;
+  arXiv:0705.1756): "the Einstein cluster is dynamically stable against radial and non-radial
+  perturbations" in the low-compactness regime of galactic haloes.
+- Ostrowski, "Inverse reconstruction of Einstein cluster collapse and oscillations in
+  tangential-pressure spacetimes" (arXiv:2511.15540, v2 22 October 2026), §2.1: "Circular
+  configurations on the branch R0 > 6M are stable against small radial perturbations, whereas
+  3M < R0 < 6M is the unstable branch." The analysis is shell by shell in the enclosed mass, so the
+  working criterion for a thick swarm is r > 6 m(r) at every layer. That reading is mine, not the
+  author's wording.
+
+Applied to the swarm shell on the authors' density: the total smoothed mass is 3.40 m in geometric
+units, so 6 m(r) reaches 20.4 m at the outer edge, while the material extends to about 23 m with
+most of it inside 20 m. The layers between roughly 19.5 and 20.4 m sit on or just inside the
+unstable branch; everything inside is on the stable one. At the paper's compactness the swarm is
+therefore marginal at its outer skin and stable elsewhere; any shell less compact than about 0.3
+clears the criterion throughout. This is radial stability of circular orbits only; it says
+nothing about collisions or about the warp shift.
+
 ## 4. Where this sits in the project
 
 It is a candidate matter model for Step 6, alongside Le's elastic shell: strength-supported against
