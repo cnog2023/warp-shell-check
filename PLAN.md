@@ -7,6 +7,11 @@ side-by-side figures against the paper are pending); Step 4's core done for the 
 (`work/shell/RESULTS.md`: 1D identity, 3D confirmation, smoothing sweep). Open: all-observer energy
 conditions of the warp shell in both toolkits (C4, C5), the warpax-native comparison, Step 6, Step 7.
 E-mails drafted in `work/notes/03`, to be sent by Carlos after reading.
+Update 26 October: Part 1 of §7a done (`work/matrix/RESULTS.md`, notes 06 and 07): the allowed
+shift is 0.09 to 0.10 times the compactness; the paper's 0.02 passes with a ceiling of 0.030 to
+0.033; two WarpFactory defects found (GPU hard-coded in the sampling; Null and Weak maps lowered
+with the coordinate metric). Wiki published. Next: Part 2 (warpax), on Carlos's word. E-mails
+still on hold until Part 4.
 
 ## 0. The question
 

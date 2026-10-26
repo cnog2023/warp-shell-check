@@ -1,0 +1,5 @@
+compactness,s_null_pass,s_weak_pass,s_strong_pass,s_dom_pass,nec_dense_pass,swarm_pass,s_null_fail,s_weak_fail,s_strong_fail,s_dom_fail,nec_dense_fail,swarm_fail
+0.3333333333,0.02,0.02,0.02,0.02,0.02,0.02,0.04,0.04,0.04,0.04,0.04,0.04
+0.1,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01
+0.03333333333,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01
+0.01,0,0,0,0,0,0,0.01,0.01,0.01,0.01,0.01,0.01
