@@ -36,7 +36,10 @@ kk = (k0-1):(k0+1);                 % three central planes for the sampled condi
 inner = 3:gridSize(2)-2;            % drop two edge cells per side in the summary
 
 factors = [1/3, 1/10, 1/30, 1/100];
-betas = [0, 0.01, 0.02, 0.04, 0.08, 0.16];
+% First run (26 Oct 2026, run 40406621961): betas = [0 0.01 0.02 0.04 0.08 0.16] at every compactness.
+% It showed the first failing shift scaling with the compactness C (momentum density grows as
+% beta / C relative to the energy density), so this refined run samples beta in units of C.
+betaOverC = [0, 0.02, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10, 0.12, 0.15];
 numAng = 100; numTime = 10;
 names = {'rho', 'p_x', 'p_y', 'p_z', 'P_xx', 'P_yy', 'P_zz', 'P_xy', 'P_xz', 'P_yz'};
 comps = {[1 1], [1 2], [1 3], [1 4], [2 2], [3 3], [4 4], [2 3], [2 4], [3 4]};

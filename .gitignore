@@ -24,3 +24,8 @@ work/shell/replica/*.csv
 
 # Local clone of the GitHub wiki (its own git repository)
 wiki/
+
+# Matrix runs: slices and profiles are large and re-downloadable (gh run download); keep summary.csv
+work/matrix/run-*/slice_*.mat
+work/matrix/run-*/profiles_*.csv
+work/matrix/ci-artifacts/
