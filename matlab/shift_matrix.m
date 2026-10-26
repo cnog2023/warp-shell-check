@@ -46,7 +46,7 @@ comps = {[1 1], [1 2], [1 3], [1 4], [2 2], [3 3], [4 4], [2 3], [2 4], [3 4]};
 header = 'factor,compactness,M_kg,beta,rho0_J_m3,minNull,minWeak,minStrong,minDominant,minRhoEul,maxAbsMomentum,tBuild_s,tT_s,tEC_s';
 rows = [];
 
-fprintf('grid %s at %.3g m; betas %s; sampling %d x %d\n', mat2str(gridSize), gridScaling(2), mat2str(betas), numAng, numTime);
+fprintf('grid %s at %.3g m; beta/C %s; sampling %d x %d\n', mat2str(gridSize), gridScaling(2), mat2str(betaOverC), numAng, numTime);
 for a = 1:numel(factors)
     f = factors(a);
     m = R2 / (2*G) * c^2 * f;
