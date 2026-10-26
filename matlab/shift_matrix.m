@@ -50,6 +50,7 @@ fprintf('grid %s at %.3g m; betas %s; sampling %d x %d\n', mat2str(gridSize), gr
 for a = 1:numel(factors)
     f = factors(a);
     m = R2 / (2*G) * c^2 * f;
+    betas = betaOverC * (2*G*m/(R2*c^2));     % shifts for this compactness
     t0 = tic;
     M0 = metricGet_WarpShellComoving(gridSize, worldCenter, m, R1, R2, Rbuff, sigma, smoothFactor, 0, 0, gridScaling);
     M1 = metricGet_WarpShellComoving(gridSize, worldCenter, m, R1, R2, Rbuff, sigma, smoothFactor, 1, 1, gridScaling);
