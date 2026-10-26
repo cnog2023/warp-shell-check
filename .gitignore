@@ -21,3 +21,6 @@ results/
 # Large regenerable data: profiles are rebuilt by replicate_profiles.py or re-downloaded with gh run download
 work/shell/ci-artifacts/profiles_*.csv
 work/shell/replica/*.csv
+
+# Local clone of the GitHub wiki (its own git repository)
+wiki/

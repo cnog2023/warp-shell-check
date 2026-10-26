@@ -83,3 +83,34 @@ jobs:
           name: shell-results
           path: results/shell/
           if-no-files-found: warn
+
+  matrix:
+    name: Shift against compactness (Part 1A)
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Clone WarpFactory (MIT, NerdsWithAttitudes/WarpFactory @ main)
+        run: |
+          git clone --depth 1 https://github.com/NerdsWithAttitudes/WarpFactory.git external/WarpFactory
+          git -C external/WarpFactory log -1 --format='WarpFactory %h %cs'
+
+      - name: Set up MATLAB with the toolboxes WarpFactory needs
+        uses: matlab-actions/setup-matlab@v2
+        with:
+          products: Parallel_Computing_Toolbox Curve_Fitting_Toolbox
+          cache: true
+
+      - name: Run the matrix
+        uses: matlab-actions/run-command@v2
+        with:
+          command: addpath(genpath('external/WarpFactory')); addpath('matlab'); shift_matrix
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: matrix-results
+          path: results/matrix/
+          if-no-files-found: warn
