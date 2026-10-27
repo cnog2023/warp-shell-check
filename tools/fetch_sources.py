@@ -8,8 +8,9 @@ INDEX.md.
     python tools/fetch_sources.py            # everything missing
     python tools/fetch_sources.py --force    # re-download all
 
-Papers come from sources/papers/MANIFEST.tsv (columns: arxiv_id, file_stem, ...). Web pages are
-listed below. Be polite to arXiv: one request every 1.5 s.
+Papers come from sources/papers/MANIFEST.tsv (columns: arxiv_id, file_stem, ...). PDFs that are not on
+arXiv are listed in PDFS below (text extracted with PyMuPDF when it is installed: `pip install pymupdf`).
+Web pages are listed below. Be polite to arXiv: one request every 1.5 s.
 """
 import datetime
 import html
@@ -36,6 +37,13 @@ WEB_PAGES = [
     ("https://github.com/matlab-actions/setup-matlab", "github_matlab_actions_setup_matlab_licensing"),
     ("https://appliedphysics.org/warp-grants/", "appliedphysics_warp_grants"),
     ("https://astro.theoj.org/article/121868-what-no-one-has-seen-before-gravitational-waveforms-from-warp-drive-collapse", "oja_clough_collapse_published"),
+]
+
+# PDFs that are not on arXiv: (url, file stem). Saved to sources/papers/ like the arXiv ones; the text
+# extraction (PyMuPDF, one "=== page N ===" marker per page) goes to sources/papers-text/.
+PDFS = [
+    ("https://ntrs.nasa.gov/api/citations/20110015936/downloads/20110015936.pdf",
+     "2011_white_warp_field_mechanics_101_ntrs_20110015936"),
 ]
 
 
@@ -85,6 +93,29 @@ def main(force=False):
             except Exception as e:  # old papers have no HTML version
                 print(f"  nohtml {aid} ({type(e).__name__})")
             time.sleep(1.5)
+    for url, stem in PDFS:
+        pdf_path = PAPERS / f"{stem}.pdf"
+        txt_path = TEXT / f"{stem}.txt"
+        if pdf_path.exists() and not force:
+            print(f"  have   {pdf_path.name}")
+        else:
+            pdf = get(url, binary=True)
+            if pdf[:5] == b"%PDF-":
+                pdf_path.write_bytes(pdf)
+                print(f"  pdf    {pdf_path.name} ({len(pdf) // 1024} KB)")
+            else:
+                print(f"  FAIL   {stem}: not a PDF")
+            time.sleep(1.5)
+        if pdf_path.exists() and (not txt_path.exists() or force):
+            try:
+                import pymupdf
+            except ImportError:
+                print(f"  notext {stem}: PyMuPDF not installed (pip install pymupdf)")
+                continue
+            doc = pymupdf.open(pdf_path)
+            pages = [f"=== page {i + 1} ===\n{page.get_text()}" for i, page in enumerate(doc)]
+            txt_path.write_text(f"SOURCE: {url}\nRETRIEVED: {today}\n\n" + "\n".join(pages), encoding="utf-8", newline="\n")
+            print(f"  text   {txt_path.name} (PyMuPDF, {doc.page_count} pages)")
     for url, name in WEB_PAGES:
         path = WEB / f"{name}.md"
         if path.exists() and not force:

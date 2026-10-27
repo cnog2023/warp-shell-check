@@ -2,8 +2,9 @@
 
 Retrieved 18 October 2026 unless stated. Paths are relative to this folder. When one of our documents
 cites a source, it gives the path and the location inside it: section, equation, figure, error number
-or source line. `sources/papers/MANIFEST.tsv` lists every PDF with the title arXiv states for it, so a
-mis-named file can be caught.
+or source line. `sources/papers/MANIFEST.tsv` lists every arXiv PDF with the title arXiv states for it,
+so a mis-named file can be caught; PDFs from elsewhere are listed in the `PDFS` table of
+`tools/fetch_sources.py`, which extracts their text with PyMuPDF, one `=== page N ===` marker per page.
 
 ## A. The two toolkits (`repos/`, local clones, excluded from git)
 
@@ -46,7 +47,7 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 
 | File | Citation | Why it matters, and where to look |
 |---|---|---|
-| `2021_bobrick_martire_introducing_physical_warp_drives_2102.06824` | Bobrick, Martire. CQG 38, 105009 (2021) | The framework the shell paper builds on: warp drives as shells of material; the claim that subluminal positive-energy drives are possible. Critiqued in Santiago et al. 2022 App. A and B, and in Barzegar et al. 2026 Errors 4, 10, 12, 14, 27 |
+| `2021_bobrick_martire_introducing_physical_warp_drives_2102.06824` | Bobrick, Martire. CQG 38, 105009 (2021) | The framework the shell paper builds on: warp drives as shells of material; the claim that subluminal positive-energy drives are possible. Critiqued in Santiago et al. 2022 App. A and B, and in Barzegar et al. 2026 Errors 4, 10, 12, 14, 27. Read closely for note 12 §2.2: §3 the spherical positive-energy case (time dilation is the only effect, l. 135, 227), §4.2 flattening, §5.2-5.4 propulsion, sources and "mass requirements ... still enormous"; Santiago App. A on its pressure-free hollow fluid shell |
 | `2023_helmerich_warpfactory_aiaa_2404.10855` | Helmerich et al. AIAA SciTech 2023 | The first WarpFactory paper |
 | `2024_helmerich_warpfactory_cqg_2404.03095` | Helmerich, Fuchs, Bobrick, Sellers, Melcher, Martire. CQG 41, 095009 (2024) | The methods paper. Fourth-order differences, 1 m grid, four error sources, drop two edge cells; Figs 21-22 error analysis; §4 the "comoving frame" (Barzegar Error 12); §6 the energy-condition sampling claim (Barzegar Error 20) |
 | `2024_fuchs_constant_velocity_physical_warp_drive_2405.02709` | Fuchs, Helmerich, Bobrick, Sellers, Melcher, Martire. CQG 41, 095013 (2024) | **The paper under test.** §3.1 metric creation in five steps (Fig. 3, eqs 19-21); the text admits the isotropic-pressure assumption "is not valid for the R1 boundary" and that Einstein's equations then give "the true rho and P_i"; §4 the shift beta_warp = 0.02; Fig. 4 density and pressure before and after smoothing; Figs 6-7 static shell; Figs 8-10 warp shell; Fig. 15 and Table 1 light-ray test, 7.6 ns. Parameters R1 = 10 m, R2 = 20 m, M = 4.49e27 kg |
@@ -59,6 +60,7 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | `2023_schuster_santiago_visser_adm_mass_warp_drive_2205.15950` | Schuster, Santiago, Visser. Gen. Relativ. Gravit. (2023) | ADM mass in warp spacetimes; the "transported Schwarzschild drive" the Fuchs paper cites |
 | `2025_barzegar_buchert_restrictions_of_current_warp_drives_2407.00720` | Barzegar, Buchert. Universe 11, 293 (2025) | Precursor of the 2026 critique; defines the S-Warp and T-Warp classes it refers back to |
 | `2026_barzegar_buchert_vigneron_classification_demystification_2602.16495` | Barzegar, Buchert, Vigneron. arXiv, 18 Feb 2026, 33 pp. | **The critique.** Classification (S-Warp, R-Warp, Natário, Alcubierre); 37 numbered Errors; Theorems IV.31-33; **Error 18 and Appendix B**: the TOV and junction argument, eqs B.1-B.6, including the condition a(R1) = 0 (B.3) that we must assess against what the code does; Errors 12, 13, 20, 31, 33, 37 on Fuchs and Helmerich; Error 35 on Clough et al.; §IV.6 the Synge G-method; §V discussion and conclusions |
+| `2025_celmaster_rubin_wec_violations_lentz_warp_drives_2511.18251` | Celmaster, Rubin. arXiv, 23 Nov 2025 (fetched 27 Oct 2026) | Direct computation of the Eulerian energy density of Lentz's soliton: negative in places; derivation errors listed; a corrected geometry still violates the weak energy condition; the original potential's total energy is infinite (l. 954); §7 on the no-go theorems. Le's reference [22]. Note 12 §2.4 |
 
 ### B3. Robust verification and shells
 
@@ -88,9 +90,10 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | `1997_pfenning_ford_unphysical_nature_of_warp_drive_gr-qc_9702026` | Pfenning, Ford. CQG 14, 1743 (1997) | Quantum inequalities applied to the Alcubierre bubble; the wall-thickness bound |
 | `1999_van_den_broeck_warp_drive_reasonable_energy_gr-qc_9905084` | Van Den Broeck. CQG 16, 3973 (1999) | The pocket construction; in WarpFactory's metric set |
 | `2002_natario_warp_drive_zero_expansion_gr-qc_0110086` | Natário. CQG 19, 1157 (2002) | Theorem 1.7: these models violate the weak or the strong energy condition; Barzegar et al. Theorem IV.31 cites it |
-| `2021_lentz_breaking_the_warp_barrier_2006.07125` | Lentz. CQG 38, 075015 (2021) | Positive-energy soliton claim; refuted by Santiago et al.; Barzegar et al. Errors 3, 16, 17, 24, 30, 36; in WarpFactory's metric set |
+| `2021_lentz_breaking_the_warp_barrier_2006.07125` | Lentz. CQG 38, 075015 (2021) | Positive-energy soliton claim, sourced by "an electric plasma consisting of a massive fluid and electromagnetic fields" (§4, l. 138-159), the literature's one named ordinary-matter source for a warp geometry; energy "(few) x 10^-1 M_sun v_s" at R = 100 m (l. 131); not a solution of Einstein's equations per Santiago et al. App. C-D, Barzegar et al. Errors 3, 16, 17, 24, 30, 36, and Celmaster and Rubin 2025 (B2); in WarpFactory's metric set. Note 12 §2.3 |
 | `2021_fell_heisenberg_positive_energy_warp_drive_2104.06488` | Fell, Heisenberg. CQG 38, 155020 (2021) | "Hidden geometric structures"; Barzegar et al. Errors 12, 19, 24, 36 |
 | `2017_alcubierre_lobo_warp_drive_basics_2103.05610` | Alcubierre, Lobo. Fundam. Theor. Phys. 189 (2017) | The standard review chapter; Barzegar et al. Error 5 concerns its eq. (11.26) |
+| `2011_white_warp_field_mechanics_101_ntrs_20110015936` (not on arXiv; `PDFS` in `tools/fetch_sources.py`; fetched 27 Oct 2026) | White. NASA JSC, 100 Year Starship Symposium, Orlando, 2 Sep 2011; ten pages plus 23 slides (pp. 11-33, read from rendered images) | Alcubierre review; thicker bubble walls lower the peak and total negative energy (p. 3, p. 9-10, slide 9); "canonical form" and boost gamma = cosh(phi) (pp. 4-5); negative mass in mission planning (p. 7); the White-Juday interferometer with a 1 cm capacitor ring and a target boost of 1.0000001 (p. 8, slide 21). States that the metric violates the strong, weak and dominant conditions (p. 9). No Jupiter-mass figures in this document. Note 12 §2.1 |
 
 ### B7. Energy, measurement and emergence (read 27 October 2026 at Carlos's request)
 
@@ -129,7 +132,7 @@ the ones on the list (noted in the rows), and two of the list's descriptions do 
 | `work/hollow-shell/`, `work/shell/` | Steps 2 and 4: the TOV routes for the hollow shell; the 1D identity, 3D confirmation, smoothing sweep, compactness scan and the Einstein-cluster swarm, each with its `RESULTS.md` |
 | `work/matrix/` | Parts 1 and 2: the shift-against-compactness matrix from CI (`matlab/shift_matrix.m`), its analysis, the Null/Weak replica, and warpax's exact energy conditions on the same slices (`exact_conditions.py`, `exact_maps.py`). `RESULTS.md` sections 1-6 are Part 1, section 7 is Part 2; `README.md` has the commands |
 | `work/wf-reproduction/` | Part 3: the paper's Figures 4 to 10 next to ours from the slices (`pairs/`), the paper's curves digitised from the PDF (`digitise_paper.py`, `comparison.csv`), and the smoothing behind the figures fitted with the replica (`fit_smoothing.py`); `RESULTS.md` has the verdicts |
-| `work/notes/` | Session notes, dated; 03 holds the letters as sent, 10 the two WarpFactory issue drafts |
+| `work/notes/` | Session notes, dated; 03 holds the letters as sent, 10 the two WarpFactory issue drafts, 11 and 12 the readings on energy sources (seven papers from an AI list; White, Bobrick-Martire, Lentz) |
 | `REPORT.md` (root) | The draft report for the comment window, 27 October 2026; its appendix will hold the replies |
 
 ## E. Still to add
