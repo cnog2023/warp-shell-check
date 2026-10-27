@@ -92,6 +92,23 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | `2021_fell_heisenberg_positive_energy_warp_drive_2104.06488` | Fell, Heisenberg. CQG 38, 155020 (2021) | "Hidden geometric structures"; Barzegar et al. Errors 12, 19, 24, 36 |
 | `2017_alcubierre_lobo_warp_drive_basics_2103.05610` | Alcubierre, Lobo. Fundam. Theor. Phys. 189 (2017) | The standard review chapter; Barzegar et al. Error 5 concerns its eq. (11.26) |
 
+### B7. Energy, measurement and emergence (read 27 October 2026 at Carlos's request)
+
+Seven papers from an AI-generated list, read in `work/notes/11-energy-sources-reading.md` to ask whether
+anything in them points to a way of supplying the shell's stress-energy other than 4.5e27 kg of orbiting
+matter. None does; the rows say what each paper is actually about. Two ids resolve to titles other than
+the ones on the list (noted in the rows), and two of the list's descriptions do not match the papers.
+
+| File | Citation | Why it matters, and where to look |
+|---|---|---|
+| `2012_kauffmann_self_gravitational_upper_bound_1212.0426` | Kauffmann. arXiv physics.gen-ph, v5 Jan 2014; no journal | A Newtonian model with energy feedback: a cap E < c^4 r/G on the energy a sphere can hold (eq. 4b) and a "dark energy" estimate of 1.7e-9 J/m^3 (eq. 8b). A cap, not a source; the shell sits at one sixth of it; not general relativity. Note 11 §2.1 |
+| `2014_aboueldahab_tawfik_measurable_maximal_energy_1401.3164` | Abou El Dahab, Tawfik. Can. J. Phys., doi 10.1139/cjp-2013-0661 (per arXiv) | Largest measurable energy and smallest measurable time from the generalised uncertainty principle, both Planck-scale (§II-III); §IV.4 reviews minimum-mass bounds from the cosmological constant. Not loop quantum gravity, as the list said. No bearing on sourcing stress-energy. Note 11 §2.2 |
+| `2015_ali_khalil_vagenas_minimal_length_gravitational_measurements_1510.06365` | Ali, Khalil, Vagenas. EPL (2015, per arXiv) | A GUP-modified Schwarzschild metric (eq. 29) tested against light deflection, Shapiro delay, perihelion and redshift; bounds on alpha_0 in Table 1. §IV writes the effective stress-energy of the modified metric: at the shell's mass and radius it is at most 1e-3 of the shell's density and negative. Not a source. Note 11 §2.3 |
+| `2016_seveso_peri_paris_quantum_limits_mass_sensing_1603.09559` | Seveso, Peri, Paris. J. Phys. A, doi 10.1088/1751-8121/aa6cc5 (per arXiv) | How precisely a quantum particle's mass can be inferred from its motion under gravity (quantum Fisher information); position measurements of a falling packet carry no gravitational information (§3.1). Measuring mass, not making it. Note 11 §2.4 |
+| `2025_dobkowski_quantum_free_fall_equivalence_principle_2502.14535` | Dobkowski, ..., Folman. arXiv v4 Dec 2025; v1-v3 titled "Observation of the quantum equivalence principle for matter-waves" | Atom interferometer with one packet held and one in free fall; the -m g^2 T^3/(3 hbar) phase measured (eq. 2, §3-4). Gravity is a "passive background" by the authors' own statement (Supplement N). Not relevant to sourcing. Note 11 §2.5 |
+| `2025_carney_quantum_mechanics_entropic_forces_2502.17575` | Carney, Karydas, Scharnhorst, Singh, Taylor. Phys. Rev. X 15, 031038 (2025); the list called it "Emergent Gravity in the Thermodynamic Limit" | Quantum models in which Newton's law between two masses emerges from the free energy of thermal qubits (§II, eqs 15-17), with noise, decoherence and entanglement predictions (§III). The one paper on where gravity comes from: the mechanism acts between given masses and is non-relativistic; it does not replace mass. Quotable for the question "could the mass be emergent?". Note 11 §2.6 |
+| `2026_guo_quantum_limits_ultrahigh_frequency_gw_2501.18146` | Guo, Miao, Wang, Yang, Zhou. Phys. Rev. D 113, 044020 (2026) | Quantum limit on detecting gravitational-wave backgrounds above 10 kHz (Table 1, Fig. 1); the detectable backgrounds carry about 2e-18 J/m^3, 58 orders below the shell. Detection, not production. Note 11 §2.7 |
+
 ## C. Web pages (`sources/web/`, tag-stripped text with URL and date)
 
 | File | What |
