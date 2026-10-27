@@ -96,12 +96,14 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | `2011_white_warp_field_mechanics_101_ntrs_20110015936` (not on arXiv; `PDFS` in `tools/fetch_sources.py`; fetched 27 Oct 2026) | White. NASA JSC, 100 Year Starship Symposium, Orlando, 2 Sep 2011; ten pages plus 23 slides (pp. 11-33, read from rendered images) | Alcubierre review; thicker bubble walls lower the peak and total negative energy (p. 3, p. 9-10, slide 9); "canonical form" and boost gamma = cosh(phi) (pp. 4-5); negative mass in mission planning (p. 7); the White-Juday interferometer with a 1 cm capacitor ring and a target boost of 1.0000001 (p. 8, slide 21). States that the metric violates the strong, weak and dominant conditions (p. 9). No Jupiter-mass figures in this document. Note 12 §2.1 |
 | `2013_white_warp_field_mechanics_102_energy_optimization_ntrs_20130011213` (not on arXiv; `PDFS` in `tools/fetch_sources.py`; fetched 27 Oct 2026) | White. "Warp Field Mechanics 102: Energy Optimization", NASA JSC Eagleworks, 2013; 32 slides, no paper; slides 6, 11, 16, 17 are images whose text does not extract | The source of the "Jupiter to Voyager" figures. Slide 16, "Exotic Mass Warp Requirements, 10 m diameter, v_apparent = 10c": total exotic (negative) mass against shell thickness fraction; the general-relativity curve (bulk velocity dU/dt = 0) runs from about 1e27 kg (Jupiter, 1.9e27) at the thinnest wall to about 1e20 kg (4 Vesta, 2.6e20) at the thickest; the lower curves, down to about 1e3 kg (Voyager), need the "hyperspace oscillation" of slides 9 and 14, a Chung-Freese extra-dimensional model ("space-time is really stiff: c^4/8 pi G ... we need to engage higher dimensional models"). Note 13 §4 |
 
-### B7. Energy, measurement and emergence (read 27 October 2026 at Carlos's request)
+### B7. Readings at Carlos's request, 27 October 2026: energy, measurement, emergence, and one on atmospheric signatures
 
 Seven papers from an AI-generated list, read in `work/notes/11-energy-sources-reading.md` to ask whether
 anything in them points to a way of supplying the shell's stress-energy other than 4.5e27 kg of orbiting
 matter. None does; the rows say what each paper is actually about. Two ids resolve to titles other than
 the ones on the list (noted in the rows), and two of the list's descriptions do not match the papers.
+The last row is a separate request, read in `work/notes/14-atmosphere-radiation-reading.md` for the
+stability question (register row C7).
 
 | File | Citation | Why it matters, and where to look |
 |---|---|---|
@@ -112,6 +114,7 @@ the ones on the list (noted in the rows), and two of the list's descriptions do 
 | `2025_dobkowski_quantum_free_fall_equivalence_principle_2502.14535` | Dobkowski, ..., Folman. arXiv v4 Dec 2025; v1-v3 titled "Observation of the quantum equivalence principle for matter-waves" | Atom interferometer with one packet held and one in free fall; the -m g^2 T^3/(3 hbar) phase measured (eq. 2, §3-4). Gravity is a "passive background" by the authors' own statement (Supplement N). Not relevant to sourcing. Note 11 §2.5 |
 | `2025_carney_quantum_mechanics_entropic_forces_2502.17575` | Carney, Karydas, Scharnhorst, Singh, Taylor. Phys. Rev. X 15, 031038 (2025); the list called it "Emergent Gravity in the Thermodynamic Limit" | Quantum models in which Newton's law between two masses emerges from the free energy of thermal qubits (§II, eqs 15-17), with noise, decoherence and entanglement predictions (§III). The one paper on where gravity comes from: the mechanism acts between given masses and is non-relativistic; it does not replace mass. Quotable for the question "could the mass be emergent?". Note 11 §2.6 |
 | `2026_guo_quantum_limits_ultrahigh_frequency_gw_2501.18146` | Guo, Miao, Wang, Yang, Zhou. Phys. Rev. D 113, 044020 (2026) | Quantum limit on detecting gravitational-wave backgrounds above 10 kHz (Table 1, Fig. 1); the detectable backgrounds carry about 2e-18 J/m^3, 58 orders below the shell. Detection, not production. Note 11 §2.7 |
+| `2026_fell_loeb_radiative_signatures_warp_drives_atmosphere_2608.10800` | Fell, Loeb (Applied Physics; Harvard). arXiv v1, 11 Aug 2026, 16 pp. | Relativistic hydrodynamics (Athena++) of air flowing past a static Alcubierre bubble, source term dropped, no back-reaction (§II.1, l. 84); bow shock, 144 MeV per nucleon at 0.5 c, luminosities 1e13 to 1e19 W, stratospheric glow up to 7460 W/m^2 (§III); written to constrain warp-drive readings of UAP (§I, §V). "Strictly for zero ADM mass warp drives"; massive shells deferred (l. 342). "Stability" appears only for the numerics; nothing for C7. Note 14 |
 
 ## C. Web pages (`sources/web/`, tag-stripped text with URL and date)
 
