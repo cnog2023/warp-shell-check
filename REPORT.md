@@ -231,6 +231,12 @@ swarm realisability fail together. The paper's 0.02 passes every check with ever
 noise floor; its footnote that 0.02 "is likely not an upper limit" is right by a factor of about
 1.6. (C5.)
 
+The ceiling is robust to the shape of the cavity: flattening or stretching it along the direction
+of motion by up to 15 %, with the exterior and therefore the mass unchanged, moves it by about 10 %
+either way, and reshaping further fails the dominant condition at zero shift; there is no analogue
+here of the energy saving that flattening buys the Alcubierre bubble (`work/oblate-shell/RESULTS.md`,
+register row C11).
+
 Put together with section 4.2: a shell whose material sustains a strength-to-energy ratio s has
 compactness at most s/0.76 and therefore a shift of at most about **0.13 s**. For graphene that is
 8e-11, about 2.5 centimetres per second. The swarm needs no strength and is limited instead by
@@ -335,6 +341,7 @@ disagreed with separately.
 | C8 | The pressure step integrates the TOV equation | The code applies a solid-sphere closed form, and so does the paper's Figure 4; an initial guess, smoothed afterwards |
 | C9 | WarpFactory's four condition maps are evaluated consistently | The Null and Weak maps use the coordinate metric where the Dominant and Strong use Minkowski; spurious violations above the paper's point, none at it |
 | C10 | The published live script is the configuration behind the paper's figures | The figures were smoothed 12 % less, at ratio 1.72 against the code's 1.79, and sampled every 2 mm; every amplitude difference follows |
+| C11 | Bobrick and Martire: flattening along the motion is more energy-efficient, "likely" for positive-energy drives too | For this shell the mass is fixed by the exterior; flattening the cavity by 15 % raises the shift ceiling by about 10 %, stretching lowers it by the same, more fails the dominant condition at zero shift |
 
 ## 7. What we ask the people involved
 
