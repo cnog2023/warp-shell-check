@@ -179,9 +179,13 @@ the density profile." Scaling the mass down at fixed geometry and smoothing
 (`work/shell/compactness_scan.py`), the required strength-to-energy ratio settles at **0.76 times the
 compactness**. Reference ratios of strength to rho c^2: steel 7e-13, carbon fibre 4e-11, diamond
 4e-10, graphene 6e-10. A graphene-strength shell therefore needs a compactness below about 8e-10,
-which at the paper's 20 m radius is still 1e19 kg at nuclear density; at graphene's own density it
-is an Earth-sized, Earth-mass shell. For scale the other way, the pressure at the centre of a heavy
-neutron star is about 1e35 Pa, against 2.6e39 Pa here.
+which at the paper's 20 m radius is still 1e19 kg at 4e14 kg/m^3, a thousandth of nuclear density;
+at graphene's own density it is an Earth-sized, Earth-mass shell. Shrinking the shell does not help:
+every ratio in this report depends on the compactness alone, so a shell of the same compactness
+scaled to 50 cm needs the same strength-to-energy ratio and carries the same shift, with a mass of
+3e17 kg at 6e17 kg/m^3, nuclear density; a smaller shell of the same compactness is denser, not
+weaker. For scale the other way, the pressure at the centre of a heavy neutron star is about 1e35 Pa,
+against 2.6e39 Pa here.
 
 ### 4.3 What could supply the stress: two matter models
 
@@ -244,8 +248,10 @@ register row C11).
 Put together with section 4.2: a shell whose material sustains a strength-to-energy ratio s has
 compactness at most s/0.76 and therefore a shift of at most about **0.13 s**. For graphene that is
 8e-11, about 2.5 centimetres per second. The swarm needs no strength and is limited instead by
-orbital stability near compactness 1/3, so its ceiling is the paper's, about 0.03, at the paper's
-two Jupiter masses.
+orbital stability: a compactness of 1/3 means R2 = 6GM/c^2, so the paper's outer wall sits exactly at
+the innermost stable circular orbit of its own mass, and any more compact swarm would have unstable
+outer orbits (section 4.3; a reading of the cluster literature, not a stability analysis of ours).
+Its ceiling is therefore the paper's, about 0.03, at the paper's two Jupiter masses.
 
 ### 4.5 The exact check: warpax on the same points
 

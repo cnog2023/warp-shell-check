@@ -124,6 +124,8 @@ Holding the geometry and smoothing at the authors' values and scaling the mass d
 In the weak-field limit the required strength-to-energy ratio settles at 0.76 times the
 compactness. Reference ratios of strength to rho c^2: steel 7e-13, carbon fibre 4e-11, graphene
 6e-10, diamond 4e-10. A graphene-strength shell therefore needs compactness below about 8e-10. At
-the paper's 20 m radius that is still a mass of 1e19 kg at nuclear density; bringing the density
-down to graphene's own requires an Earth-sized, Earth-mass shell. What the warp shift can be at
+the paper's 20 m radius that is still a mass of 1e19 kg at 3.7e14 kg/m^3 (corrected 27 Oct 2026:
+"at nuclear density" here was loose; it is a thousandth of nuclear density); bringing the density
+down to graphene's own requires an Earth-sized, Earth-mass shell. The same shell scaled to R2 = 0.5 m
+at the same compactness has 2.7e17 kg at 5.9e17 kg/m^3, nuclear density, with the same ratios. What the warp shift can be at
 such compactness is the next question (the paper's "mass-to-velocity ratio"), not yet computed.
