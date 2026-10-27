@@ -1,5 +1,7 @@
 # warp-research: instructions for every session
 
+Read `RESUME.md` first: where the last session stopped, and what the next part needs that is not in the repository.
+
 Read, in this order, before doing anything: `INDEX.md` (what we have and where), `PLAN.md` (what we
 are doing and which step we are on), `CLAIMS.md` (what is under test and its status). Then the latest
 file in `work/notes/`.
