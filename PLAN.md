@@ -18,6 +18,13 @@ for each of the four conditions at every compactness, and pass the paper's 0.02 
 C4 and C5 closed, Step 5 done. Part 1's "factor two" in the sampled depth was a normalisation and is
 corrected (the shortfall is 7 % at the paper's compactness). Wiki updated with two figures. Next:
 Part 3 (the paper's figures side by side), on Carlos's word. E-mails still on hold until Part 4.
+Update 27 October, later: Part 3 done (`work/wf-reproduction/RESULTS.md`, note 09): the paper's
+Figures 4 to 10 next to ours, same picture in every panel; the paper's curves digitised from the
+PDF's vector paths; every amplitude difference (1 to 11 %) traced to the figures having been made
+with a smoothing 12 % narrower than the published live script's, at the ratio 1.72 the paper states
+rather than the 1.79 the code carries (new register row C10; C8 confirmed from Figure 4). Step 3
+closed pending Carlos's "same picture" verdicts. Next: Part 4, the write-up and contact, on Carlos's
+word.
 
 ## 0. The question
 
