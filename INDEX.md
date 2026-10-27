@@ -112,7 +112,8 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | `work/hollow-shell/`, `work/shell/` | Steps 2 and 4: the TOV routes for the hollow shell; the 1D identity, 3D confirmation, smoothing sweep, compactness scan and the Einstein-cluster swarm, each with its `RESULTS.md` |
 | `work/matrix/` | Parts 1 and 2: the shift-against-compactness matrix from CI (`matlab/shift_matrix.m`), its analysis, the Null/Weak replica, and warpax's exact energy conditions on the same slices (`exact_conditions.py`, `exact_maps.py`). `RESULTS.md` sections 1-6 are Part 1, section 7 is Part 2; `README.md` has the commands |
 | `work/wf-reproduction/` | Part 3: the paper's Figures 4 to 10 next to ours from the slices (`pairs/`), the paper's curves digitised from the PDF (`digitise_paper.py`, `comparison.csv`), and the smoothing behind the figures fitted with the replica (`fit_smoothing.py`); `RESULTS.md` has the verdicts |
-| `work/notes/` | Session notes, dated |
+| `work/notes/` | Session notes, dated; 03 holds the letters as sent, 10 the two WarpFactory issue drafts |
+| `REPORT.md` (root) | The draft report for the comment window, 27 October 2026; its appendix will hold the replies |
 
 ## E. Still to add
 

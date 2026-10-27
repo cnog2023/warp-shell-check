@@ -23,8 +23,13 @@ Figures 4 to 10 next to ours, same picture in every panel; the paper's curves di
 PDF's vector paths; every amplitude difference (1 to 11 %) traced to the figures having been made
 with a smoothing 12 % narrower than the published live script's, at the ratio 1.72 the paper states
 rather than the 1.79 the code carries (new register row C10; C8 confirmed from Figure 4). Step 3
-closed pending Carlos's "same picture" verdicts. Next: Part 4, the write-up and contact, on Carlos's
-word.
+closed; the verdict per pair is numerical at Carlos's request (`work/wf-reproduction/comparison.xlsx`).
+Update 27 October, Part 4 begun on Carlos's word: the letters to Le and to Barzegar, Buchert and
+Vigneron were sent (note 03; from cmnogueira@heimhero.de, where Carlos had wanted his personal
+address: a mistake, recorded); `REPORT.md` drafted at the root for the two-week comment window; the
+letter to Applied Physics drafted in note 03 for Carlos to send from cmnogueira@gmail.com with the
+report; the two WarpFactory issues drafted in note 10 for him to post once the authors have been
+asked. Open: the replies, the appendix, Zenodo.
 
 ## 0. The question
 
