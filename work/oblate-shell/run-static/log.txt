@@ -1,0 +1,16 @@
+C:\Users\cmnog\Projects\warp-research\work\shell\replicate_profiles.py:74: RuntimeWarning: invalid value encountered in divide
+  B = (1 - 2 * G * Ms / r / c**2)**(-1)
+alpha 0.500 beta 0.0000 (beta/C 0.000): rho_min -2.11e+03 nec_dense -2.159e+03 typeI 1.00000 dec -4.158e+03 tec -4.223e+03 j_max 0.000 j/rho 0.000 worst (-17.1,+2.1) mass 9.810e+27 53 s
+C:\Users\cmnog\Projects\warp-research\work\shell\replicate_profiles.py:74: RuntimeWarning: invalid value encountered in divide
+  B = (1 - 2 * G * Ms / r / c**2)**(-1)
+alpha 0.700 beta 0.0000 (beta/C 0.000): rho_min -2.20e+02 nec_dense -3.146e+02 typeI 1.00000 dec -3.530e+02 tec -4.395e+02 j_max 0.000 j/rho 0.000 worst (+14.5,-0.1) mass 4.576e+27 64 s
+C:\Users\cmnog\Projects\warp-research\work\shell\replicate_profiles.py:74: RuntimeWarning: invalid value encountered in divide
+  B = (1 - 2 * G * Ms / r / c**2)**(-1)
+alpha 0.850 beta 0.0000 (beta/C 0.000): rho_min +8.22e-07 nec_dense -2.411e-07 typeI 1.00000 dec -2.417e-07 tec -2.961e-01 j_max 0.000 j/rho 0.000 worst (+6.1,+26.5) mass 4.573e+27 64 s
+C:\Users\cmnog\Projects\warp-research\work\shell\replicate_profiles.py:74: RuntimeWarning: invalid value encountered in divide
+  B = (1 - 2 * G * Ms / r / c**2)**(-1)
+alpha 1.250 beta 0.0000 (beta/C 0.000): rho_min +8.22e-07 nec_dense -2.411e-07 typeI 1.00000 dec -2.417e-07 tec -3.325e-01 j_max 0.000 j/rho 0.000 worst (-6.1,+26.5) mass 4.573e+27 80 s
+C:\Users\cmnog\Projects\warp-research\work\shell\replicate_profiles.py:74: RuntimeWarning: invalid value encountered in divide
+  B = (1 - 2 * G * Ms / r / c**2)**(-1)
+alpha 1.500 beta 0.0000 (beta/C 0.000): rho_min -1.02e+00 nec_dense -3.936e+00 typeI 1.00000 dec -3.936e+00 tec -1.275e+00 j_max 0.000 j/rho 0.000 worst (-39.3,+32.1) mass 4.608e+27 104 s
+done

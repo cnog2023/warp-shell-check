@@ -1,0 +1,9 @@
+alpha 1.000 beta 0.0000 (beta/C 0.000): rho_min +8.22e-07 nec_dense -2.411e-07 typeI 1.00000 dec -2.417e-07 tec +3.333e-07 j_max 0.000 j/rho 0.000 worst (+6.1,+26.5) mass 4.573e+27 64 s
+alpha 1.000 beta 0.0200 (beta/C 0.060): rho_min +8.22e-07 nec_dense -2.411e-07 typeI 1.00000 dec -2.417e-07 tec +3.333e-07 j_max 0.303 j/rho 0.348 worst (+6.1,+26.5) mass 4.571e+27 64 s
+alpha 1.000 beta 0.0267 (beta/C 0.080): rho_min +8.22e-07 nec_dense -2.411e-07 typeI 1.00000 dec -2.417e-07 tec +3.333e-07 j_max 0.404 j/rho 0.465 worst (+6.1,+26.5) mass 4.570e+27 63 s
+alpha 1.000 beta 0.0300 (beta/C 0.090): rho_min +8.22e-07 nec_dense -2.411e-07 typeI 1.00000 dec -2.417e-07 tec +3.333e-07 j_max 0.455 j/rho 0.523 worst (+6.1,+26.5) mass 4.569e+27 63 s
+alpha 1.000 beta 0.0333 (beta/C 0.100): rho_min +8.22e-07 nec_dense -9.675e-02 typeI 0.99207 dec -2.417e-07 tec +3.333e-07 j_max 0.505 j/rho 0.581 worst (+6.1,+26.5) mass 4.568e+27 64 s
+alpha 1.000 beta 0.0367 (beta/C 0.110): rho_min +8.22e-07 nec_dense -2.064e-01 typeI 0.98406 dec -2.417e-07 tec +3.333e-07 j_max 0.556 j/rho 0.639 worst (+6.1,+26.5) mass 4.567e+27 48 s
+alpha 1.000 beta 0.0400 (beta/C 0.120): rho_min +8.22e-07 nec_dense -3.164e-01 typeI 0.97495 dec -2.417e-07 tec +3.333e-07 j_max 0.606 j/rho 0.697 worst (+6.1,+26.5) mass 4.566e+27 50 s
+alpha 1.000 beta 0.0450 (beta/C 0.135): rho_min +8.22e-07 nec_dense -4.831e-01 typeI 0.95094 dec -2.417e-07 tec +3.333e-07 j_max 0.682 j/rho 0.785 worst (+6.1,+26.5) mass 4.564e+27 49 s
+alpha 1.000 beta 0.0500 (beta/C 0.150): rho_min +8.22e-07 nec_dense -6.516e-01 typeI 0.92978 dec -2.417e-07 tec +3.333e-07 j_max 0.757 j/rho 0.872 worst (+6.1,+26.5) mass 4.561e+27 53 s

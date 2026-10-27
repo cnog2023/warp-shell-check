@@ -1,0 +1,2 @@
+alpha,beta,beta_over_C,dec_margin,dec_typeI_min,grid,j_max,j_over_rho_max,mass_plane_kg,n_active,n_fail_dec,n_not_typeI,nec_dense,r_worst,ra,rb,rho0,rho_max,rho_min,t_s,tec_min,typeI_frac,x_worst,x_worst_nec,y_worst,y_worst_nec
+1.25,0.0,0.0,-2.4165087306349035e-07,-2.4165087306349035e-07,350,0.0,0.0,4.5731143990706646e+27,57308,0,0,-2.410715081233719e-07,27.193013808697263,10.0,20.0,1.358495372203728e+40,1.1504809300858287,8.222156073084004e-07,79.99599981307983,-0.33249663070448116,1.0,-6.100000000000001,6.100000000000001,26.5,26.5

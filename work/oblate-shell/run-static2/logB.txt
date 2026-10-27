@@ -1,0 +1,5 @@
+alpha 1.150 ra 10 rb 20 beta 0.0000 (beta/C 0.000): rho_min +8.22e-07 nec -2.411e-07 at (+6.1,+26.5) typeI 1.00000 dec -2.416e-07 at (-6.1,+26.5) tec -1.064e+00 at (+16.1,-0.1) [rho 1.030 p +0.199..+0.947] j_max 0.000 j/rho 0.000 mass 4.5731e+27 75 s
+alpha 1.250 ra 10 rb 20 beta 0.0000 (beta/C 0.000): rho_min +8.22e-07 nec -1.687e+00 at (+17.7,+0.1) typeI 1.00000 dec -3.250e+00 at (+16.9,-0.1) tec -7.928e+00 at (+16.9,-0.1) [rho 0.958 p +0.471..+4.208] j_max 0.000 j/rho 0.000 mass 4.5731e+27 82 s
+alpha 0.700 ra 16 rb 26 beta 0.0000 (beta/C 0.000): rho_min -3.92e-01 nec -4.223e-01 at (-0.1,-21.5) typeI 1.00000 dec -1.173e+00 at (-0.1,+21.1) tec -1.142e+00 at (-0.1,+21.1) [rho -0.362 p -0.041..+0.811] j_max 0.000 j/rho 0.000 mass 4.5731e+27 57 s
+alpha 0.850 ra 16 rb 26 beta 0.0000 (beta/C 0.000): rho_min -9.42e-02 nec -9.975e-02 at (-0.9,-22.9) typeI 1.00000 dec -3.487e-01 at (-0.1,+22.1) tec -3.580e-01 at (+25.1,-0.1) [rho 0.055 p -0.010..+0.212] j_max 0.000 j/rho 0.000 mass 4.5731e+27 60 s
+done

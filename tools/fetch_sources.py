@@ -44,6 +44,8 @@ WEB_PAGES = [
 PDFS = [
     ("https://ntrs.nasa.gov/api/citations/20110015936/downloads/20110015936.pdf",
      "2011_white_warp_field_mechanics_101_ntrs_20110015936"),
+    ("https://ntrs.nasa.gov/api/citations/20130011213/downloads/20130011213.pdf",
+     "2013_white_warp_field_mechanics_102_energy_optimization_ntrs_20130011213"),
 ]
 
 
