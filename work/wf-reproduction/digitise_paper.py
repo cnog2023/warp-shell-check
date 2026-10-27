@@ -80,10 +80,36 @@ def calibrate(page, rect):
                     xs.append((cx, float(t)))
     if len(xs) < 2 or len(ys) < 2:
         raise RuntimeError(f"not enough tick labels for {rect}: x {xs} y {ys}")
+    # The labels give the values; the tick marks (short segments in the axes colour on the left and
+    # bottom edges) give the positions exactly. Label boxes sit about 0.2 pt below their ticks in this
+    # PDF, which put a 0.1 % offset on every panel until 27 October; the marks remove it.
+    tx, ty = tick_marks(page, rect)
+    xs = sorted(xs); ys = sorted(ys, key=lambda t: -t[0])          # y labels from the bottom up, like the marks' values
+    if len(tx) == len(xs) and max(abs(t - p) for t, (p, _) in zip(tx, xs)) < 2.5:
+        xs = [(t, v) for t, (_, v) in zip(tx, xs)]
+    ty_desc = sorted(ty, reverse=True)                               # page y grows downwards: bottom tick first
+    if len(ty_desc) == len(ys) and max(abs(t - p) for t, (p, _) in zip(ty_desc, ys)) < 2.5:
+        ys = [(t, v) for t, (_, v) in zip(ty_desc, ys)]
     ax, bx = np.polyfit([p for p, _ in xs], [v for _, v in xs], 1)
     ay, by = np.polyfit([p for p, _ in ys], [v for _, v in ys], 1)
     resx = max(abs(ax * p + bx - v) for p, v in xs); resy = max(abs(ay * p + by - v) for p, v in ys)
     return (ax, bx), (ay, by), (len(xs), len(ys), resx, resy)
+
+
+def tick_marks(page, rect):
+    """Positions of the tick marks: single short segments in the axes colour, horizontal on the left edge
+    of the box (y positions) and vertical on the bottom edge (x positions)."""
+    xs, ys = [], []
+    for d in page.get_drawings():
+        col = d.get("color")
+        if col is None or len(d["items"]) != 1 or d["items"][0][0] != "l" or not all(abs(c - 0.149) < 0.05 for c in col):
+            continue
+        p1, p2 = d["items"][0][1], d["items"][0][2]
+        if abs(p1.y - p2.y) < 0.05 and abs(min(p1.x, p2.x) - rect.x0) < 1.5 and 0.5 < abs(p2.x - p1.x) < 6 and rect.y0 - 1 <= p1.y <= rect.y1 + 1:
+            ys.append(round(p1.y, 3))
+        if abs(p1.x - p2.x) < 0.05 and abs(max(p1.y, p2.y) - rect.y1) < 1.5 and 0.5 < abs(p2.y - p1.y) < 6 and rect.x0 - 1 <= p1.x <= rect.x1 + 1:
+            xs.append(round(p1.x, 3))
+    return sorted(set(xs)), sorted(set(ys))
 
 
 def curve_points(page, rect, colour, band):

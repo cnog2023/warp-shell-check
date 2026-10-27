@@ -3,9 +3,9 @@
 **Last session: 27 October 2026.** Parts 2 and 3 of `PLAN.md` section 7a are closed. Part 2:
 `work/matrix/RESULTS.md` section 7, note 08, C4 and C5 closed. Part 3: `work/wf-reproduction/RESULTS.md`,
 note 09, the paper's Figures 4 to 10 next to ours (`pairs/`), register rows C2 and C8 extended and
-C10 added. Wiki updated with figures for both (Findings sections 10 and 11). Carlos's "same picture"
-verdict per pair is still to be entered in the last column of `work/wf-reproduction/RESULTS.md`
-section 1.
+C10 added. Wiki updated with figures for both (Findings sections 10 and 11). The "same picture" verdict per
+pair is numerical (Carlos declined a visual one as beyond a non-physicist; he wants numbers and my
+judgement with the reasoning): `work/wf-reproduction/RESULTS.md` section 1 and `comparison.xlsx`.
 
 **Next, only on Carlos's word: Part 4.** The write-up (PLAN section 2: about ten pages from the
 notes and the three RESULTS files), the e-mails (drafts in `work/notes/03-email-drafts.md`, to be
@@ -56,7 +56,7 @@ The slices are gitignored and the GitHub artifacts expire, so these folders are 
 - **The published live script is not the configuration behind the paper's figures** (C10): the
   figures' smoothing spans are 6100 and 3540 samples (ratio 1.72) against the script's 7160 and
   4000 (1.79), and their lines are sampled every 2 mm through r = 0. Everything in Parts 1 and 2 is
-  at the script's setting; the hoop stress is 0.194 rho0 c^2 there and 0.212 at the figures'. A
+  at the script's setting; the hoop stress is 0.194 rho0 c^2 there and 0.211 at the figures'. A
   matrix rerun at the figures' smoothing needs smoothFactor 3540 and a shadow copy of
   `metricGet_WarpShellComoving.m` with 1.72 in place of 1.79.
 - The two outermost cells on every grid line are stencil artefacts in vacuum; drop them. The

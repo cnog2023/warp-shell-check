@@ -1,5 +1,5 @@
 construction,span_rho_samples,span_P_samples,rho_smoothed_peak_J_m3,wall_10_90_m,P_r_peak_J_m3,P_t_peak_J_m3,r_of_P_t_peak_m,M_smoothed_over_M
 W1 live script,7160,4000,1.3585e+40,5.36169,1.04237e+39,2.63168e+39,10.3139,1.01881
 fitted to Figure 6,6100,3540,1.37334e+40,4.64923,1.06906e+39,2.90722e+39,10.2515,1.01364
-paper, Figure 6,0,0,1.37508e+40,4.6466,1.07514e+39,2.90947e+39,10.2626,nan
-# independent fits: density span 6100 (misfit 0.0018), pressure span 3540 (misfit 0.0061), ratio 1.723; W1 misfits 0.0250 and 0.0139
+paper, Figure 6,0,0,1.37334e+40,4.6457,1.06877e+39,2.9031e+39,10.2527,nan
+# independent fits: density span 6100 (misfit 0.0000), pressure span 3540 (misfit 0.0002), ratio 1.723; W1 misfits 0.0250 and 0.0126
