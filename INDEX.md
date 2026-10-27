@@ -109,6 +109,8 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | Where | What |
 |---|---|
 | `work/precision-probe/` | WarpFactory's solver arithmetic ported to NumPy and run against exact answers. `RESULTS.md` has the tables; `precision_probe.py` regenerates them and the figure |
+| `work/hollow-shell/`, `work/shell/` | Steps 2 and 4: the TOV routes for the hollow shell; the 1D identity, 3D confirmation, smoothing sweep, compactness scan and the Einstein-cluster swarm, each with its `RESULTS.md` |
+| `work/matrix/` | Parts 1 and 2: the shift-against-compactness matrix from CI (`matlab/shift_matrix.m`), its analysis, the Null/Weak replica, and warpax's exact energy conditions on the same slices (`exact_conditions.py`, `exact_maps.py`). `RESULTS.md` sections 1-6 are Part 1, section 7 is Part 2; `README.md` has the commands |
 | `work/notes/` | Session notes, dated |
 
 ## E. Still to add

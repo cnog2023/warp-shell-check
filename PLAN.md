@@ -12,6 +12,12 @@ shift is 0.09 to 0.10 times the compactness; the paper's 0.02 passes with a ceil
 0.033; two WarpFactory defects found (GPU hard-coded in the sampling; Null and Weak maps lowered
 with the coordinate metric). Wiki published. Next: Part 2 (warpax), on Carlos's word. E-mails
 still on hold until Part 4.
+Update 27 October: Part 2 of §7a done (`work/matrix/RESULTS.md` section 7, note 08): warpax's exact
+S-lemma conditions on the same slices give the same threshold, 0.09 to 0.10 times the compactness,
+for each of the four conditions at every compactness, and pass the paper's 0.02 for every observer;
+C4 and C5 closed, Step 5 done. Part 1's "factor two" in the sampled depth was a normalisation and is
+corrected (the shortfall is 7 % at the paper's compactness). Wiki updated with two figures. Next:
+Part 3 (the paper's figures side by side), on Carlos's word. E-mails still on hold until Part 4.
 
 ## 0. The question
 

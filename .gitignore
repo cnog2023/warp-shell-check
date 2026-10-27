@@ -29,3 +29,5 @@ wiki/
 work/matrix/run-*/slice_*.mat
 work/matrix/run-*/profiles_*.csv
 work/matrix/ci-artifacts/
+# Part 2 per-factor intermediates; the merged exact_cases.csv, exact_brackets.csv and exact_miss.csv are kept
+work/matrix/run-*/exact_cases_f*.csv
