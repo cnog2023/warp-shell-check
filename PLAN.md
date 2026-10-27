@@ -29,7 +29,9 @@ Vigneron were sent (note 03; from cmnogueira@heimhero.de, where Carlos had wante
 address: a mistake, recorded); `REPORT.md` drafted at the root for the two-week comment window; the
 letter to Applied Physics drafted in note 03 for Carlos to send from cmnogueira@gmail.com with the
 report; the two WarpFactory issues drafted in note 10 for him to post once the authors have been
-asked. Open: the replies, the appendix, Zenodo.
+asked. Open: the replies, the appendix, Zenodo. Side reading the same day, at Carlos's request and
+filed as a dead end: seven papers on energy bounds, measurement and emergent gravity, none of which
+offers another source for the shell's mass-energy (note 11).
 
 ## 0. The question
 
