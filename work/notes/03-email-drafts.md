@@ -114,6 +114,35 @@ Carlos Nogueira
 
 ---
 
+## Reply received from Barzegar, Buchert and Vigneron, 27 October 2026
+
+Received the same day, in Carlos's mailbox. Not reproduced here: the letter promised verbatim
+quotation only with permission, and permission has not yet been asked. Summary: they agree the point
+raised is an imprecision, that setting a(R1) = 0 is in general a loss of generality, and have removed
+it in the upcoming version; other mistakes in Fuchs et al. remain and the broader message of Error 18
+remains valid; a significantly revised version will be uploaded to arXiv in a few weeks. Register row
+C1 and `REPORT.md` (section 4.1, appendix) updated.
+
+## E-mail 4: Carlos's reply to Barzegar, Buchert and Vigneron — draft, to send from cmnogueira@gmail.com
+
+Subject: Re: A question on condition (B.3) in Appendix B of arXiv:2602.16495, from a hobbyist project
+
+Dear Dr Barzegar, Professor Buchert, Dr Vigneron,
+
+Thank you for the quick and clear answer. We will read the revised version when it appears and
+check our text against it, Error 18 included; where the broader point stands in our own numbers it
+is stated as standing.
+
+Two small requests. May we quote your reply verbatim in the write-up's appendix, where every reply
+is recorded? And when the draft report is ready to be sent for comment, in the next days, may we
+send it to you with a two-week window, as promised?
+
+Please note that this personal address is the one I read for the project; a reply to either address
+reaches me.
+
+With thanks,
+Carlos Nogueira
+
 ## Optional note from cmnogueira@gmail.com, if Carlos wants the replies there (not sent)
 
 To each of the two recipients, from his personal address, in reply to nothing:

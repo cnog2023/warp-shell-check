@@ -124,7 +124,11 @@ The critique's (B.5) is exact for constant density and isotropic pressure; we re
 infinity, and the cavity's clock then runs at 0.761 of the rate at infinity, the cavity still flat
 in rescaled time. Imposing both over-determines the problem: they agree only for M = 0. WarpFactory's
 `alphaNumericSolver.m` matches the lapse outside and never imposes a(R1) = 0. So (B.6) describes
-neither the paper's text nor its code, and the sign it finds is not the construction's.
+neither the paper's text nor its code, and the sign it finds is not the construction's. The
+critique's authors, asked, agree: in their reply of 27 October 2026 (appendix) they call the
+condition an imprecision and a loss of generality, removed in a revised version of their paper to
+appear on arXiv within weeks, and hold that the broader message of Error 18 stands, which is also
+our reading.
 
 The elementary objection stands regardless: a fluid face against vacuum must carry zero pressure,
 TOV makes nonnegative pressure fall outward, so an isotropic hollow fluid shell cannot be static.
@@ -331,7 +335,7 @@ disagreed with separately.
 
 | | Claim | Status |
 |---|---|---|
-| C1 | The critique: the construction is not a solution of Einstein's equations, by Appendix B | The derivation imposes a(R1) = 0, which neither the text nor the code does, and finds tension where integration finds compression; the elementary objection and the constitutive-law point stand. Awaiting the authors' reply |
+| C1 | The critique: the construction is not a solution of Einstein's equations, by Appendix B | The derivation imposes a(R1) = 0, which neither the text nor the code does, and finds tension where integration finds compression; the elementary objection and the constitutive-law point stand. The critique's authors agree and are removing the condition in a revision (appendix) |
 | C2 | The paper: radial pressure equals the input; tangential pressure spikes at the inner wall | Confirmed and sized: 0.194 rho0 c^2 at the script's smoothing, 0.211 at the figures' |
 | C3 | The paper: every pressure stays below the energy density | True at the authors' setting, margin 2.6; fails for walls sharper than about 2 m |
 | C4 | WarpFactory's sampled observer check is sufficient | For the verdict on a case, yes; it misses 5 to 66 % of the violating cells at the first failing shift and almost none when the violation is deep |
@@ -388,4 +392,12 @@ reproduced under its CC BY 4.0 licence with attribution.
 
 ## Appendix: responses received
 
-None yet. The two-week comment window opens when this draft is sent.
+**Barzegar, Buchert and Vigneron, 27 October 2026**, in reply to the letter of the same day on
+Appendix B (`work/notes/03-email-drafts.md`). Summarised pending their permission to quote: they
+agree that what the letter raised is an imprecision; setting a(R1) = 0 is in general a loss of
+generality, and they have removed it in the forthcoming version of their paper. They add that other
+mistakes in Fuchs et al. remain and that the broader message of Error 18 remains valid, and that a
+significantly revised version, with improved discussion and structure, will be uploaded to arXiv in a
+few weeks. This text will be revisited against that version.
+
+The two-week comment window for this draft opens when it is sent to all three parties.
