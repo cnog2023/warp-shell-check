@@ -1,5 +1,16 @@
 # Note 12: White 2011, Bobrick and Martire 2021, Lentz 2021: anything usable on the energy source?
 
+> **Addendum, 30 October 2026.** At Carlos's request the published version of Lentz's paper (Class.
+> Quantum Grav. 38, 075015; received 26 August 2020, revised 29 January 2021, published 9 March 2021,
+> 14 pages) was looked at in his DeepDyve rental through Chrome DevTools. The viewer serves page images
+> without a text layer and IOP reserves text and data mining and AI rights on it ("All rights,
+> including for text and data mining, AI training, and similar technologies, are reserved", page 1
+> footer), so no text was extracted; pages 1 and 2 were read as a reader would and compared with the
+> arXiv text in `sources/papers-text/`: identical apart from copy-editing (title case, hyphenation,
+> the v_s^2/c^2 factors that the arXiv HTML extraction flattens). Carlos: "if the first 2 pages of
+> this are the same as arXiv you don't need to screenshot them all." Nothing new; the arXiv version
+> and the three refutations of section 2.3 and 2.4 stand as the record.
+
 27 October 2026, afternoon. Carlos asked, after note 11: "What about from these papers below? Anything we
 can use if we didn't already?" with three links: NASA NTRS 20110015936, arXiv:2102.06824 and
 arXiv:2006.07125. The first is Harold White's "Warp Field Mechanics 101" (NASA Johnson Space Center,

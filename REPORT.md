@@ -197,6 +197,13 @@ self-gravitating shell with two free faces; we have not reproduced it and cite i
 the strength question is treated properly. The ratios above say what the elasticity would have to
 be.
 
+For the record, the warp-drive literature's one attempt to name an ordinary-matter source for a
+positive-energy warp geometry, Lentz's conducting plasma with electromagnetic fields (Class. Quantum
+Grav. 38, 075015, 2021), concerns a different geometry, with flat spatial slices and no massive
+shell, and has been found not to be a solution of Einstein's equations with that source by three
+independent groups: Santiago, Schuster and Visser (2022), Barzegar, Buchert and Vigneron (2026), and
+Celmaster and Rubin (2025), who computed the energy density directly (`work/notes/12`).
+
 **A swarm, which needs no strength** (`work/shell/einstein_cluster.py`, `work/notes/06`). The
 continuum limit of counter-rotating rings on random axes is Einstein's 1939 cluster: particles on
 circular geodesics, zero radial pressure, tangential pressure rho v^2/2 with v set by the enclosed
