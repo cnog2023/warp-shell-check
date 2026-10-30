@@ -11,9 +11,9 @@ arxiv_id	file_stem	title_per_arxiv	pdf_ok	text
 2605.25417	2026_le_relativistic_elastic_shells	[2605.25417] Relativistic elastic shells: material support and cavity geometry	True	text 136k chars
 2605.03653	2026_buchert_frackowiak_novel_realizations	[2605.03653] Novel Realizations of Warp Drive Spacetimes as Solutions of General Relativity	True	text 121k chars
 2608.08213	2026_particle_geodesics_warp_drive	[2608.08213] Exploring Particle Geodesics in a Warp Drive Spacetime	True	text 50k chars
-gr-qc/0009013	1994_alcubierre_warp_drive	[gr-qc/0009013] The warp drive: hyper-fast travel within general relativity	True	no html version
-gr-qc/0110086	2002_natario_warp_drive_zero_expansion	[gr-qc/0110086] Warp Drive With Zero Expansion	True	no html version
-gr-qc/9905084	1999_van_den_broeck_warp_drive_reasonable_energy	[gr-qc/9905084] A `warp drive' with more reasonable total energy requirements	True	no html version
+gr-qc/0009013	1994_alcubierre_warp_drive	[gr-qc/0009013] The warp drive: hyper-fast travel within general relativity	True	no html version; text 14k chars from the PDF (PyMuPDF)
+gr-qc/0110086	2002_natario_warp_drive_zero_expansion	[gr-qc/0110086] Warp Drive With Zero Expansion	True	no html version; text 16k chars from the PDF (PyMuPDF)
+gr-qc/9905084	1999_van_den_broeck_warp_drive_reasonable_energy	[gr-qc/9905084] A `warp drive' with more reasonable total energy requirements	True	no html version; text 15k chars from the PDF (PyMuPDF)
 2006.07125	2021_lentz_breaking_the_warp_barrier	[2006.07125] Breaking the Warp Barrier: Hyper-Fast Solitons in Einstein-Maxwell-Plasma Theory	True	text 33k chars
 2104.06488	2021_fell_heisenberg_positive_energy_warp_drive	[2104.06488] Positive Energy Warp Drive from Hidden Geometric Structures	True	text 50k chars
 2103.05610	2017_alcubierre_lobo_warp_drive_basics	[2103.05610] Warp drive basics	True	text 60k chars
@@ -28,3 +28,6 @@ gr-qc/9702026	1997_pfenning_ford_unphysical_nature_of_warp_drive	[gr-qc/9702026]
 2501.18146	2026_guo_quantum_limits_ultrahigh_frequency_gw	[2501.18146] Fundamental quantum limits for detecting ultrahigh frequency gravitational waves	True	text 107k chars
 2511.18251	2025_celmaster_rubin_wec_violations_lentz_warp_drives	[2511.18251] Violations of the Weak Energy Condition for Lentz Warp Drives	True	text 135k chars
 2608.10800	2026_fell_loeb_radiative_signatures_warp_drives_atmosphere	[2608.10800] Radiative Signatures from Warp Drives Traveling Through the Earth's Atmosphere	True	text 68k chars
+2302.13826	2023_abellan_bolivar_vasilev_anisotropic_matter_alcubierre	[2302.13826] Influence of anisotropic matter on the Alcubierre metric and other related metrics: revisiting the problem of negative energy	True	text 44k chars
+2205.02780	2022_joseph_alcubierre_bohmian_quantum_gravity	[2205.02780] Alcubierre Warp Drive in Bohmian Quantum Gravity	True	text 25k chars
+2203.05989	2022_alias_jalar_braneworld_hyperdrive	[2203.05989] Superluminal Geometrodynamics of Braneworld Hyperdrive via Brane-Bulk Interaction	True	no html version; text 39k chars from the PDF (PyMuPDF)

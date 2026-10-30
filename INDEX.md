@@ -80,7 +80,7 @@ of `main` at `cb68eee`, 9 October 2026, version 1.5.1. Has tests, lint, a docs b
 | File | Citation | Why it matters |
 |---|---|---|
 | `2026_buchert_frackowiak_novel_realizations_2605.03653` | Buchert, Frackowiak. Universe 12, 132 (2026) | Natário subclass, Synge G-method constraints, "expected generic instability of the warp field" in the geodesic example |
-| `2026_particle_geodesics_warp_drive_2608.08213` | (2026) | Geodesics in a warp spacetime; background only |
+| `2026_particle_geodesics_warp_drive_2608.08213` | Sanches, Morris, Brandt (LSU). arXiv v2, 12 Aug 2026, accepted in CQG | Geodesics of dust, meteors and photons in Alcubierre and Natário-class bubbles at 0.5 c: debris is picked up, focused or reflected at up to 0.8 c (§3), "slippage" (§4-5), a "deflector shield" of transverse shift with its co-moving points (§6); open-source Rust integrator. No matter computed (l. 130); all its metrics "violate all the energy conditions" (l. 308). Read closely 30 Oct 2026: no path for the shell, note 15 §2.1 |
 
 ### B6. Foundations
 
@@ -102,8 +102,10 @@ Seven papers from an AI-generated list, read in `work/notes/11-energy-sources-re
 anything in them points to a way of supplying the shell's stress-energy other than 4.5e27 kg of orbiting
 matter. None does; the rows say what each paper is actually about. Two ids resolve to titles other than
 the ones on the list (noted in the rows), and two of the list's descriptions do not match the papers.
-The last row is a separate request, read in `work/notes/14-atmosphere-radiation-reading.md` for the
-stability question (register row C7).
+The Fell and Loeb row is a separate request, read in `work/notes/14-atmosphere-radiation-reading.md` for
+the stability question (register row C7). The last three rows are the four-paper request of 30 October
+2026, read in `work/notes/15-four-papers-paths.md` for an explorable path beyond the elastic-shell
+session (the fourth of those papers, Sanches et al., is in B5): none found.
 
 | File | Citation | Why it matters, and where to look |
 |---|---|---|
@@ -115,6 +117,9 @@ stability question (register row C7).
 | `2025_carney_quantum_mechanics_entropic_forces_2502.17575` | Carney, Karydas, Scharnhorst, Singh, Taylor. Phys. Rev. X 15, 031038 (2025); the list called it "Emergent Gravity in the Thermodynamic Limit" | Quantum models in which Newton's law between two masses emerges from the free energy of thermal qubits (§II, eqs 15-17), with noise, decoherence and entanglement predictions (§III). The one paper on where gravity comes from: the mechanism acts between given masses and is non-relativistic; it does not replace mass. Quotable for the question "could the mass be emergent?". Note 11 §2.6 |
 | `2026_guo_quantum_limits_ultrahigh_frequency_gw_2501.18146` | Guo, Miao, Wang, Yang, Zhou. Phys. Rev. D 113, 044020 (2026) | Quantum limit on detecting gravitational-wave backgrounds above 10 kHz (Table 1, Fig. 1); the detectable backgrounds carry about 2e-18 J/m^3, 58 orders below the shell. Detection, not production. Note 11 §2.7 |
 | `2026_fell_loeb_radiative_signatures_warp_drives_atmosphere_2608.10800` | Fell, Loeb (Applied Physics; Harvard). arXiv v1, 11 Aug 2026, 16 pp. | Relativistic hydrodynamics (Athena++) of air flowing past a static Alcubierre bubble, source term dropped, no back-reaction (§II.1, l. 84); bow shock, 144 MeV per nucleon at 0.5 c, luminosities 1e13 to 1e19 W, stratospheric glow up to 7460 W/m^2 (§III); written to constrain warp-drive readings of UAP (§I, §V). "Strictly for zero ADM mass warp drives"; massive shells deferred (l. 342). "Stability" appears only for the numerics; nothing for C7. Note 14 |
+| `2023_abellan_bolivar_vasilev_anisotropic_matter_alcubierre_2302.13826` | Abellán, Bolívar, Vasilev. Gen. Relativ. Gravit. 55:60 (2023); physics.gen-ph | Sets a shear-free anisotropic fluid equal to the Einstein tensor of the Alcubierre metric and reads the fluid's missing yz stress as a constraint on the shift (eqs 21, 25); concludes dust and isotropic fluids give zero density and that negative energy is "spurious" (§2.1), repeated for cylindrical and spherical "warps" (§3-5). No number. Barzegar et al. l. 1113, 1223, 1307. The anisotropy the shell needs is measured in `work/shell/`. Note 15 §2.2 |
+| `2022_joseph_alcubierre_bohmian_quantum_gravity_2205.02780` | Joseph. arXiv, 28 Apr 2022; no journal; physics.gen-ph | The Alcubierre energy density mapped into a fourth-order equation for a quantum density in a Weyl-geometry scalar-tensor theory (eqs 22-28); a flat toy equation solved; the real one not. A different theory of gravity; no number. Cites White's 2011 paper as JBIS 66, 242. Note 15 §2.3 |
+| `2022_alias_jalar_braneworld_hyperdrive_2203.05989` | Alias, Jalar (UKM). arXiv v2, 5 Apr 2023; no journal; physics.gen-ph; no HTML, text from the PDF | A fifth coordinate added to the Alcubierre metric and dropped (pp. 2-5); the energy density is Alcubierre's (p. 12); a "hyperdrive velocity" as brane plus bulk velocity by a kite-surfing analogy (p. 10); "the hyperdrive requires much more energy than that of a warp drive" (p. 14). The opposite sign to White's extra-dimensional claim, with no calculation behind either. Note 15 §2.4 |
 
 ## C. Web pages (`sources/web/`, tag-stripped text with URL and date)
 

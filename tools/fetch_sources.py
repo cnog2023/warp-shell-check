@@ -95,6 +95,17 @@ def main(force=False):
             except Exception as e:  # old papers have no HTML version
                 print(f"  nohtml {aid} ({type(e).__name__})")
             time.sleep(1.5)
+            if not txt_path.exists() and pdf_path.exists():   # fall back to the PDF's text, as for PDFS below
+                try:
+                    import pymupdf
+                except ImportError:
+                    pymupdf = None
+                if pymupdf is not None:
+                    doc = pymupdf.open(pdf_path)
+                    pages = [f"=== page {i + 1} ===\n{page.get_text()}" for i, page in enumerate(doc)]
+                    txt_path.write_text(f"SOURCE: https://arxiv.org/pdf/{aid} (no HTML version; text by PyMuPDF)\nRETRIEVED: {today}\n\n"
+                                        + "\n".join(pages), encoding="utf-8", newline="\n")
+                    print(f"  text   {txt_path.name} (PyMuPDF, {doc.page_count} pages)")
     for url, stem in PDFS:
         pdf_path = PAPERS / f"{stem}.pdf"
         txt_path = TEXT / f"{stem}.txt"
